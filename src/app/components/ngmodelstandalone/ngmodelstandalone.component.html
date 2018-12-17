@@ -1,0 +1,8 @@
+<h1>ngModel Standalone</h1>
+
+<input [(ngModel)]="name" #ctrl="ngModel" required />
+
+<p>Value: {{ name }}</p>
+<p>Valid: {{ ctrl.valid }}</p>
+
+<button (click)="setValue()">Set value</button>
