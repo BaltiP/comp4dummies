@@ -1,3 +1,16 @@
-<p>
-  standardexamples works!
-</p>
+<div>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="logEventParam($event)"
+    (mouseover)="logEventParam($event)"
+  >
+    Log $event!
+  </button>
+  <button mat-raised-button color="accent" (click)="increment($event)">
+    +
+  </button>
+  <button mat-raised-button color="warn" (click)="count = count - 1">-</button>
+  <button mat-raised-button (click)="count = defCount">Clear</button>
+  {{ count }}
+</div>

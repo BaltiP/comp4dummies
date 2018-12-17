@@ -5,11 +5,18 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './standardexamples.component.html',
   styleUrls: ['./standardexamples.component.css']
 })
-export class StandardexamplesComponent implements OnInit {
+export class StandardexamplesComponent {
+  name = '';
+  count = 0;
+  eventLog = '';
+  defCount = 0;
 
-  constructor() { }
-
-  ngOnInit() {
+  increment() {
+    this.count++;
+    console.log('Event durch Klick ausgelöst!');
   }
 
+  logEventParam(event) {
+    console.log(event);
+  }
 }

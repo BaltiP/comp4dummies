@@ -9,6 +9,10 @@ import { NgModelStandaloneComponent } from './components/ngmodelstandalone/ngmod
 import { Custom2wayDataBindingComponent } from './components/custom2way-data-binding/custom2way-data-binding.component';
 import { NgmodelwithformComponent } from './components/ngmodelwithform/ngmodelwithform.component';
 
+import { MatButtonModule, MatCheckboxModule, MatExpansionModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TantaloscounterComponent } from './components/tantaloscounter/tantaloscounter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +20,18 @@ import { NgmodelwithformComponent } from './components/ngmodelwithform/ngmodelwi
     StandardexamplesComponent,
     NgModelStandaloneComponent,
     Custom2wayDataBindingComponent,
-    NgmodelwithformComponent
+    NgmodelwithformComponent,
+    TantaloscounterComponent
   ],
-  imports: [BrowserModule, FormsModule, HttpModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatExpansionModule,
+    BrowserAnimationsModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
